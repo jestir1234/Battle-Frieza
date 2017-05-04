@@ -24,9 +24,9 @@ Attack by pressing K and charge your energy with L. Remember, firing energy atta
 ## Enemies
 ![Enemies](https://github.com/jestir1234/Battle-Frieza/blob/master/images/movementTip3.png)
 
-Avoid incoming energy balls, Frieza, as well as his Death ball which will incur massive damage. 
+Avoid incoming energy ball as well as Frieza. Be sure to avoid Frieza's Death ball attack as it can incur massive damage. 
 
 ## Secret Power
 ![Secret Power](https://github.com/jestir1234/Battle-Frieza/blob/master/images/vegetaSuperSayainGif.gif)
 
-Charge your energy up to 200 and press SHIFT + L to transform into a super saiyan!
+If you charge your energy over to 200, press SHIFT + L to transform into a super saiyan!
