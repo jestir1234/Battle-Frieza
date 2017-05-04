@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+<link type ="text/css" rel="stylesheet" href="space2.css"/>
+<link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+  </script>
+  <script src="space2.js"></script>
+
+</head>
+<body>
+
+  <button id="mute"><div><img id="muteImg" src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Volume_2.png" height="15px" width="15px"/></div>Mute audio</button>
+  <div id="hpBar">HEALTH 800/800</div>
+  <div id="energyBar">ENERGY 100/100</div>
+  <div id="energyBar2">SUPER ENERGY 0/100</div>
+  <button id="gameStart" onclick="setUpGame();">START</button>
+  <div id="score">Score 0</div>
+  <div id="victory">YOU BEAT FRIEZA!<button id="victoryButton">END GAME</button></div>
+  <div id="tip"><p id="tipP1">How to move</p><img src="./images/movementTip.png"/><p id="tipP2">Hold shift to move farther</p></div>
+  <button id="tipButton" onclick="gotIt();">Got it!</button>
+  <div id="ginyuHealth">Ginyu</div>
+  <div id="friezaHealthBar"> <p id="friezaHealthText">FRIEZA 7000/7000</p></div>
+  <div id="shieldDownText"></div>
+  <div id="portrait"></div>
+  <img id="portraitPicture" src="http://img12.deviantart.net/d3d5/i/2013/251/6/f/good_vegeta_budokai_3_portrait_by_101ns-d6llsg6.png"/>
+  <button id="menuButton" draggable="true">MENU</button>
+  <div id="banner">
+  <img id="goku" src="http://orig07.deviantart.net/c3bc/f/2015/224/a/9/dragon_ball_z__advanced_adventure___goku_walk_by_zostead-d95fva3.gif" />
+  <canvas id="gameCanvas" width="2000" height="1000" style="margin-left: -550px"></canvas>
+    <div id="menu">
+        <h3 id="items-H">Items</h3>
+          <div id="items">
+            <p>Basic Tunic</p>
+            <p>Leather Boots</p>
+            <p>Senzu beans</p>
+            <p>Dragon Radar</p>
+          </div>
+        <h3 id="status-H">Status</h3>
+          <div id="status">
+            <p>Healthy<p>
+          </div>
+        <h3 id="skills-H">Skills</h3>
+          <div id="skills">
+            <p>Kamehameha</p>
+            <p>Roundhouse kick</p>
+            <p>Kaioken punch</p>
+          </div>
+        <h3 id="quests-H">Quests</h3>
+          <div id="quests">
+            <p>Find planet namek</p>
+            <p>Seek out the Guru</p>
+            <p>Destroy Frieza and his men</p>
+            <p>Find dragon balls (optional)</p>
+          </div>
+        <h3>Quit</h3>
+
+    </div>
+
+  </div>
+  <audio id="audio" autoplay="true" src="https://s3.amazonaws.com/frieza-game-dev/sounds/music/dearlybeloved.mp3">
+    <script>
+    var menuHeight = 0;
+    function expand(headerId){
+      var div = document.getElementById(headerId)
+      var menu = document.getElementById("menu")
+      if (div.style.display !== 'none'){
+          div.style.display = 'none';
+      } else {
+          div.style.display = 'block';
+      }
+    }
+    </script>
+
+</body>
+</html>
