@@ -18,7 +18,7 @@ Use the keys shown above to move the avatar.
 ## Attack
 ![Attack](https://github.com/jestir1234/Battle-Frieza/blob/master/images/movementTip2.png)
 
-Attack by pressing K and charge your energy with L. Pressing space will teleport your character forward.
+Attack by pressing K and charge your energy with L. Remember, firing energy attacks will drain your energy! Press space to teleport your character forward.
 
 
 ## Enemies
