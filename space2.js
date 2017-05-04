@@ -190,7 +190,7 @@ var friezaDeathAnimationInterval;
 
 //image sources
 kiBlastImage.src = "https://media.giphy.com/media/8TB91dQVqMR6U/200.gif"; //255x200
-enemyImage.src = "http://vignette1.wikia.nocookie.net/villains/images/5/5d/Frieza.png/revision/latest?cb=20130723111916";
+enemyImage.src = "./images/friezaBody.png";
 avatarImage.src = "./images/vegetaNormal.png";
 minionImage.src = "./images/fireball.gif"; // 156x90
 avatarImageDamaged.src = "./images/vegetaNormalDamaged.png";
@@ -215,9 +215,9 @@ transform10.src = "./images/transform10.png";
 powerUpImage.src = "./images/powerUp1.png";
 powerUpImage2.src = "./images/powerUp2.png";
 powerUpimage3.src = "./images/powerUp3.png";
-deathBallImage.src = "http://orig11.deviantart.net/6ee6/f/2009/227/f/4/death_ball_cell__png_by_aragorn3000.png";
+deathBallImage.src = "./images/deathball.png";
 senzuBeanImage.src = "./images/senzuBean.png"
-ginyuImage.src = "http://img09.deviantart.net/9180/i/2005/321/a/f/captain_ginyu_by_seijimei.png";
+ginyuImage.src = "./images/ginyuBody.png";
 ginyuDamaged1.src = "./images/ginyuDamaged1.png";
 ginyuDamaged2.src = "./images/ginyuDamaged2.png";
 friezaHeadImage.src = "./images/friezaHead.png"
@@ -249,7 +249,7 @@ function setUpGame(){
   date = new Date();
   time_start = date.getTime();
 
-  enemyImage.src = "http://vignette1.wikia.nocookie.net/villains/images/5/5d/Frieza.png/revision/latest?cb=20130723111916";
+  enemyImage.src = "./images/friezaBody2.png";
   if (gameSet){
     console.log("game is set")
   } else {
@@ -302,7 +302,7 @@ function enemyMovement(){
     setTimeout(function(){
       if (victoryToggle == false){
         jQuery("#victory").fadeToggle("slow")
-        jQuery("#victory").css("background-image", "url('http://i.skyrock.net/5389/28705389/pics/967803772.gif')")
+        jQuery("#victory").css("background-image", "url('./images/vegetaDeadGif.gif')")
         jQuery("#victorybutton").fadeToggle("slow")
         victory.innerHTML = "YOU WERE KILLED! SCORE " + currentScore
         victoryToggle = true;
@@ -338,7 +338,7 @@ function enemyMovement(){
     }
   }
   if (ginyuDead){
-    enemyImage.src = "http://vignette3.wikia.nocookie.net/universe-of-smash-bros-lawl/images/a/a6/Golden_Frieza.png/revision/latest?cb=20150718213829";
+    enemyImage.src = "./images/goldenFriezaBody.png";
     friezaDamaged.src = "./images/goldenFriezaDamaged.png"
     jQuery("#friezaHealthBar").css("background-color", "#ff0e3e")
     jQuery("#ginyuHealth").css("display", "none")
@@ -406,7 +406,7 @@ function enemyMovement(){
     });
   }
   if (timer > 6000 && timer < 6020){
-    portraitPicture.src="http://vignette4.wikia.nocookie.net/ultradragonball/images/c/cf/Frieza_Form_4_by_Yholl.png/revision/latest?cb=20111205053613";
+    portraitPicture.src="./images/friezaTorso.png";
     friezaAudio1.play();
     $("#portraitPicture").fadeToggle("slow");
     jQuery('#portrait').html('');
@@ -476,7 +476,7 @@ function enemyMovement(){
       $("#portrait").fadeToggle("slow");
       $("#portraitPicture").fadeToggle("slow");
       jQuery('#portrait').html('');
-      portraitPicture.src="http://vignette4.wikia.nocookie.net/ultradragonball/images/c/cf/Frieza_Form_4_by_Yholl.png/revision/latest?cb=20111205053613";
+      portraitPicture.src="./images/friezaTorso.png";
       $(function(){
         showText("#portrait", frieza_run_text, 0, 30);
         setTimeout(function(){
@@ -677,7 +677,7 @@ function enemyMovement(){
         if (superSayain){
           portraitPicture.src = "./images/ssjVegetaPortrait.png"
         } else {
-          portraitPicture.src = "http://img12.deviantart.net/d3d5/i/2013/251/6/f/good_vegeta_budokai_3_portrait_by_101ns-d6llsg6.png";
+          portraitPicture.src = "./images/vegataPortrait.png";
         }
         $("#portraitPicture").fadeToggle("slow");
         showText("#portrait", vegetaVictoryComment, 0, 40);
@@ -994,7 +994,7 @@ function enemyMovement(){
         if (superSayain){
           portraitPicture.src = "./images/ssjVegetaPortrait.png"
         } else {
-          portraitPicture.src = "http://img12.deviantart.net/d3d5/i/2013/251/6/f/good_vegeta_budokai_3_portrait_by_101ns-d6llsg6.png";
+          portraitPicture.src = "./images/vegetaPortrait.png";
         }
 
         $(function(){
@@ -1008,7 +1008,7 @@ function enemyMovement(){
             showText('#portrait', vegeta_comment2, 0, 30);
           }, 6000);
           setTimeout(function(){
-            portraitPicture.src="http://vignette4.wikia.nocookie.net/ultradragonball/images/c/cf/Frieza_Form_4_by_Yholl.png/revision/latest?cb=20111205053613";
+            portraitPicture.src="./images/friezaTorso.png";
             jQuery('#portrait').html('');
             showText('#portrait', frieza_comment1, 0, 42);
             setTimeout(function(){
@@ -1063,7 +1063,7 @@ function enemyMovement(){
           if (superSayain){
             portraitPicture.src = "./images/ssjVegetaPortrait.png"
           } else {
-            portraitPicture.src="http://img12.deviantart.net/d3d5/i/2013/251/6/f/good_vegeta_budokai_3_portrait_by_101ns-d6llsg6.png";
+            portraitPicture.src="./images/vegetaPortrait.png";
           }
 
           $(function(){
@@ -1077,7 +1077,7 @@ function enemyMovement(){
               showText('#portrait', vegeta_comment2, 0, 30);
             }, 6000);
             setTimeout(function(){
-              portraitPicture.src="http://vignette4.wikia.nocookie.net/ultradragonball/images/c/cf/Frieza_Form_4_by_Yholl.png/revision/latest?cb=20111205053613";
+              portraitPicture.src="./images/friezaTorso.png";
               jQuery('#portrait').html('');
               showText('#portrait', frieza_comment1, 0, 42);
               setTimeout(function(){
@@ -1637,7 +1637,7 @@ function vegetaHit(){
     if (superSayain){
       portraitPicture.src = "./images/ssjVegetaPortrait.png"
     } else {
-      portraitPicture.src="http://img12.deviantart.net/d3d5/i/2013/251/6/f/good_vegeta_budokai_3_portrait_by_101ns-d6llsg6.png";
+      portraitPicture.src="./images/vegetaPortrait.png";
     }
 
     $(function(){
@@ -1651,7 +1651,7 @@ function vegetaHit(){
         showText('#portrait', vegeta_comment2, 0, 30);
       }, 6000);
       setTimeout(function(){
-        portraitPicture.src="http://vignette4.wikia.nocookie.net/ultradragonball/images/c/cf/Frieza_Form_4_by_Yholl.png/revision/latest?cb=20111205053613";
+        portraitPicture.src="./images/friezaTorso.png";
         jQuery('#portrait').html('');
         showText('#portrait', frieza_comment1, 0, 42);
         setTimeout(function(){
@@ -1833,7 +1833,7 @@ function gotIt(){
     jQuery("#tipP2").text("")
     tip += 1;
   } else if (tip == 2){
-    jQuery("#tip img").attr("src", "http://orig04.deviantart.net/33a9/f/2013/050/7/4/vegeta_power_up_sprite_by_max2809-d5vhzjz.gif")
+    jQuery("#tip img").attr("src", "./images/vegetaPowerUpGif.gif")
     jQuery("#tipP1").text("Shift + L")
     jQuery("#tipP2").text("Charge Super Energy up to 200 to transform")
     tip += 1
