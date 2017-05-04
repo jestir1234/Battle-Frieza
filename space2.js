@@ -1823,7 +1823,7 @@ function ssjVegetaTalk(){
 var tip = 0
 function gotIt(){
   if (tip == 0){
-    jQuery("#tip img").attr("src", "./images/movementTip1.png")
+    jQuery("#tip img").attr("src", "./images/movementTip2.png")
     jQuery("#tipP1").text("Ki Blast, power-up, and dash")
     jQuery("#tipP2").text("")
     tip += 1;
