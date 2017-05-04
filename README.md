@@ -4,7 +4,7 @@ Defeat the evil tyrant!
 
 Made with JavaScript, jQuery, HTML5 - Canvas, CSS3
 
-[gitpages]: http://www.beathub.us/#/
+[I'm an inline-style link](https://www.google.com)
 
 ## Movement 
 ![Movement](https://github.com/jestir1234/Battle-Frieza/blob/master/images/movementTip.png)
