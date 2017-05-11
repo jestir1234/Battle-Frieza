@@ -277,7 +277,7 @@ function enemyMovement(){
   var dateCurrent = new Date();
   var timeCurrent = dateCurrent.getTime()
   var timer = timeCurrent - time_start
-  if (avatarPositionX > 1100){
+  if (avatarPositionX > window.innerWidth){
     avatarPositionX = 300
   }
 
@@ -1217,7 +1217,7 @@ $(document).ready(function(){
           map[e.keyCode] = true;
           //move up (fast)
           if (map[87] && map[16]){
-            if (avatarPositionY > 0){
+            if (avatarPositionY > -1000){
               if (superSayain){
                 avatarPositionY = avatarPositionY - ssjVegetaMove;
               } else {
@@ -1225,7 +1225,7 @@ $(document).ready(function(){
               }
             } // move up (slow)
           } else if (map[87]){
-            if (avatarPositionY > 0){
+            if (avatarPositionY > -1000){
               if (superSayain){
                 avatarPositionY = avatarPositionY - 20;
               } else {
@@ -1233,7 +1233,7 @@ $(document).ready(function(){
               }
             } // move down (fast)
           } else if (map[83] && map[16]){
-            if (avatarPositionY < 500){
+            if (avatarPositionY < 1000){
               if (superSayain){
                 avatarPositionY = avatarPositionY + ssjVegetaMove;
               } else {
@@ -1241,7 +1241,7 @@ $(document).ready(function(){
               }
             } // move down (slow)
           } else if (map[83]){
-            if (avatarPositionY < 500){
+            if (avatarPositionY < 1000){
               if (superSayain){
                 avatarPositionY = avatarPositionY + 20;
               } else {
@@ -1249,7 +1249,7 @@ $(document).ready(function(){
               }
             } // move right (fast)
           } else if (map[68] && map[16]){
-            if (avatarPositionX < 1100){
+            if (avatarPositionX < 2000){
               if (superSayain){
                 avatarPositionX = avatarPositionX + ssjVegetaMove;
               } else {
@@ -1257,7 +1257,7 @@ $(document).ready(function(){
               }
             } // move right (slow)
           } else if (map[68]){
-            if (avatarPositionX < 1100){
+            if (avatarPositionX < 2000){
               if (superSayain){
                 avatarPositionX = avatarPositionX + 20;
               } else {
