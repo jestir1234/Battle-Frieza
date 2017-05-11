@@ -1227,9 +1227,9 @@ $(document).ready(function(){
           } else if (map[87]){
             if (avatarPositionY > -1000){
               if (superSayain){
-                avatarPositionY = avatarPositionY - 20;
+                avatarPositionY = avatarPositionY - ssjVegetaMove;
               } else {
-                avatarPositionY = avatarPositionY - 10;
+                avatarPositionY = avatarPositionY - vegetaMove;
               }
             } // move down (fast)
           } else if (map[83] && map[16]){
@@ -1243,9 +1243,9 @@ $(document).ready(function(){
           } else if (map[83]){
             if (avatarPositionY < 1000){
               if (superSayain){
-                avatarPositionY = avatarPositionY + 20;
+                avatarPositionY = avatarPositionY + ssjVegetaMove;
               } else {
-                avatarPositionY = avatarPositionY + 10;
+                avatarPositionY = avatarPositionY + vegetaMove;
               }
             } // move right (fast)
           } else if (map[68] && map[16]){
@@ -1259,9 +1259,9 @@ $(document).ready(function(){
           } else if (map[68]){
             if (avatarPositionX < 2000){
               if (superSayain){
-                avatarPositionX = avatarPositionX + 20;
+                avatarPositionX = avatarPositionX + ssjVegetaMove;
               } else {
-                avatarPositionX = avatarPositionX + 10;
+                avatarPositionX = avatarPositionX + vegetaMove;
               }
             } // move left (fast)
           } else if (map[65] && map[16]){
@@ -1275,14 +1275,14 @@ $(document).ready(function(){
           } else if (map[65]){
             if (avatarPositionX > 0){
               if (superSayain){
-                avatarPositionX = avatarPositionX - 20;
+                avatarPositionX = avatarPositionX - ssjVegetaMove;
               } else {
-                avatarPositionX = avatarPositionX - 10;
+                avatarPositionX = avatarPositionX - vegetaMove;
               }
             }
           } else if (map[32]){
             // avatarPositionX = avatarPositionX + 200;
-            if (avatarPositionX < 1100 && avatarPositionX + 400 < 1100){
+            if (avatarPositionX < window.innerWidth && avatarPositionX + 400 < window.innerWidth){
               teleportAudio.play()
               setTimeout(function(){
                 avatarPositionX = avatarPositionX + 50;
