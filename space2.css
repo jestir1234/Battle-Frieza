@@ -126,7 +126,7 @@ body{ background: #111; margin: 0px; }
   opacity: .7;
   position: absolute;
   z-index: 3;
-  margin-left: 1000px;
+  right: 50px;
   margin-top: 150px;
   color: white;
   text-align: center;
