@@ -1215,7 +1215,7 @@ $(document).ready(function(){
       e = e || window.event
       if (e.keyCode in map) {
           map[e.keyCode] = true;
-          //move up (faster)
+          //move up (fast)
           if (map[87] && map[16]){
             if (avatarPositionY > -1000){
               if (superSayain){
